@@ -1,7 +1,6 @@
 # SET and FROZENSET (Mutable unordered collection of distinct objects)
 
 # Empty Set
-empty_set_cur = {}
 empty_set_obj = set()
 
 # Initialization of Set
