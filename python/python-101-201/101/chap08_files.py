@@ -59,3 +59,11 @@ handle_bin.close()
 # "with" operator: auto-close file and reduce the scope of the file
 with open('/Users/huyqut/Documents/hello_py', 'r') as handle:
     print(handle.read())
+
+# Summary of file modes:
+#  r  - Open a file at the beginning and read only (no file -> except)
+#  r+ - Open a file at the beginning and read/write (no file -> new file)
+#  w  - Open a file at the beginning and write only (no file -> new file, exist -> truncate everything)
+#  w+ - Open a file at the beginning and read/write (no file -> new file, exist -> truncate everything)
+#  a  - Open a file at the end and write only (no file -> new file)
+#  a+ - Open a file at the end and read/write (no file -> new file)
