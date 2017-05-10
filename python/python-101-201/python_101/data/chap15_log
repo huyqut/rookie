@@ -1,0 +1,13 @@
+DEBUG:root:This is a debug log
+INFO:root:This is an info log
+WARNING:root:This is a warning
+ERROR:root:This is an error
+CRITICAL:root:This is a critical log
+ERROR:ex:
+Traceback (most recent call last):
+  File "/Users/huyqut/Work/rookie/python/python-101-201/python_101/chap15_logging.py", line 22, in <module>
+    raise Exception()
+Exception
+INFO:roses:Mofo just started!!!
+INFO:roses.violet:Sup yo motherfucker
+INFO:roses:Mofo just stopped
