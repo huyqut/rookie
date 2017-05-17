@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wonderland total="15">
+    <area-1 id="titan">
+        <giant>
+            <uid>1234567890</uid>
+            <state></state>
+            <name>Pizza Guy</name>
+            <height>090</height>
+            <weight>lolololo</weight>
+            <credit>$4.99</credit>
+        </giant>
+    </area-1>
+</Wonderland>
