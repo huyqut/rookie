@@ -13,7 +13,7 @@ vi file-name
 
 There are 2 modes in `vi`:
 - **Command** mode: This is where you write your command to edit your file. By default, if you open `vi`, you jump into the this mode. If you are on the other mode, use **`ESC`** key to go back to command mode.
-- **Insert** mode: This is where you actually edit your file and write something. To jump into this mode, press `i` key.
+- **Insert** mode: This is where you actually edit your file and write something. To jump into this mode, press **`i`** key.
 
 ## Save & Quit a file
 
@@ -33,3 +33,4 @@ An equivalent of `:wq` is to type `ZZ` (without hitting **`ENTER`** key).
 
 - `:w file-name`: Write a file the path of `file-name`.
 - `:w! file-name`: Over-write a file if it existed.
+
