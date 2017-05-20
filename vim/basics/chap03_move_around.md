@@ -70,3 +70,4 @@
 
 - Go to: press **`count G`** go to `count` line in the file.
     - **`` `` ``**: Return to previous position before calling `G`.
+    - This can be combined with copy, change, edit syntax.
