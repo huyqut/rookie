@@ -108,4 +108,3 @@ vi [filename1] [filename2]
     :e [filename]
     ```
     - Switch a file: **`CTRL ^`**
-    
