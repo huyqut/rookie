@@ -1,10 +1,6 @@
 <?hh
 
-function pra(mixed $par): void {
-    echo "<pre>";
-    var_dump($par);
-    echo "</pre>";
-}
+include 'utils.php';
 //  PRIMITIVE TYPES
 
 //  Boolean
@@ -19,7 +15,7 @@ $and = $negation && $boolean;
 pra($and);
 $or = $negation || $boolean;
 pra($or);
-$xor = $negation xor $boolean;
+$xor = $negation ^ $boolean;
 pra($xor);
 $complex_boolean = !($negation || $and) && $or;
 pra($complex_boolean);

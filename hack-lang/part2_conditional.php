@@ -1,5 +1,7 @@
 <?hh
 
+include 'utils.php';
+
 //  Simple `if`
 if (true) {
     pra("It must be true");
