@@ -79,3 +79,24 @@ $int_expo += 2;
 pra($int_expo);
 $float_expo /= 100;
 pra($float_expo);
+
+//  Object reference does NOT work with primitive types: int, bool, float, string
+//  This will be recalled in part 6 - class
+$integer = 10;
+$ref_int = $integer;
+pra($ref_int);
+$integer = 100;
+pra($ref_int);
+
+$str = "Yes OR No";
+$ref_str = $str;
+pra($ref_str);
+$str = "How about No?";
+pra($ref_str);
+
+//  Reference type: still works with primitive types
+$float = 100.101010;
+$ref_float = &$float;
+pra($ref_float);
+$float = 200.20202020;
+pra($ref_float);
