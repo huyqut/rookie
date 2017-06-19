@@ -100,3 +100,44 @@ $ref_float = &$float;
 pra($ref_float);
 $float = 200.20202020;
 pra($ref_float);
+
+//  FUNCTIONS
+//  All types used with parameters can also be used with return types
+function helloWorld(int $i, bool $b, float $f, string $s,
+                    // mixed = any type is acceptable including `null`
+                    mixed $m): void { // void = no returns
+    pra($i);
+    pra($b);
+    pra($f);
+    pra($s);
+    pra($m);
+}
+
+helloWorld(1, true, 3.3, "Yes", "blah");
+
+function helloNull(?int $i, ?bool $b, ?float $f, ?string $s, mixed $m): void {
+    pra($i);
+    pra($b);
+    pra($f);
+    pra($s);
+    pra($m);
+}
+
+helloNull(null, null, null, null, null);
+
+//  Variadic arguments:
+function helloMany(int $sup, bool $yo, ...) {
+    pra($sup);
+    pra($yo);
+    pra(func_num_args()); // Get number of arguments from `...`
+    pra(func_get_args()); // Get all arguments from `...`
+    pra(func_get_arg(1)); // Get 2nd argument from `...` (0-based index)
+}
+
+helloMany(13, true, 1, true, 3.3, "Yep");
+
+function helloManyTypes(int ...$args) {
+    pra($args);
+}
+helloManyTypes("No", "Way");
+helloManyTypes(1, 2);
